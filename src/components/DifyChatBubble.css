@@ -1,0 +1,63 @@
+.chat-bubble-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-window {
+  position: fixed;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+}
+
+.chat-window-header {
+  height: 40px;
+  background-color: #f0f2f500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  flex-shrink: 0;
+}
+
+.chat-window-header .title {
+  font-weight: 500;
+
+}
+
+.chat-window-header .close-btn {
+  cursor: pointer;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.chat-window-content {
+  flex-grow: 1;
+  border-top: 1px solid #d9d9d9;
+}
+
+.chat-window-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  cursor: nwse-resize;
+}
+
+.resize-handle.top-left {
+  top: 0;
+  left: 0;
+} 
